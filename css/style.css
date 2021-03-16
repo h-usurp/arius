@@ -1,0 +1,169 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+body{
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+    font-size: 1.5rem;
+    overflow: hidden;
+    background-image: linear-gradient(
+        to right, 
+        rgba(15, 32, 39, .9), 
+        rgba(40, 180, 133, .9)),
+        url(../img/bck.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    position: center;
+}
+
+.header {
+    color: #fff;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.logo {
+    content: url(../img/logo.png);
+    position: absolute;
+    margin-left: 2rem;
+}
+
+@media (max-width: 37.5em) {
+    .logo {
+      display: block;
+      padding-left: 25%; } }
+
+li{
+    display: inline;
+    opacity: 50%;
+    margin: 2rem 2rem 0 0;
+    cursor: pointer;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+@media (max-width: 37.5em) {
+    .link {
+      display: none; } }
+
+.link_item {
+    font-size: 1rem;
+    list-style: none;
+    text-transform: uppercase;
+    
+}
+
+.link_item-list-1 {
+    display: inline;  
+}
+
+.link_item-list-1:hover {
+    opacity: 1;
+    font-weight: 400;
+    transition: all .1s;
+    border-bottom: 5px solid #fff;
+    border-bottom-width: 1px;
+}
+
+.link_item-list-2:hover {
+    opacity: 1;
+    font-weight: 400;
+    transition: all .5s;
+    border-bottom: 5px solid #fff;
+    border-bottom-width: 1px;
+}
+
+.link_item-list-3:hover {
+    opacity: 1;
+    font-weight: 400;
+    transition: all .5s;
+    border-bottom: 5px solid #fff;
+    border-bottom-width: 1px;
+}
+
+.header_title {
+    display: block;
+    color: #fff;
+    text-align: center;
+}
+
+.main-title {
+    display: inline-block;
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-top: 10rem;
+    /* border-bottom: #2c5364 1rem solid; */
+    animation: moveInTop-1 1.9s 0s;
+}
+
+@media (max-width: 37.5em) {
+    .main-title {
+        margin-top: 7rem;
+        font-size: 3.5rem; } }
+
+@keyframes moveInTop-1 {
+    0% {
+        opacity: 0;
+        transform: translateY(4rem);
+    }
+
+    100% {
+     opacity: 1;
+     transform: translate(0);   
+    }
+}
+
+.sub-title {
+    font-size: 1rem;
+    margin-top: 5rem;
+    animation: moveInTop-2 1.5s 0s;
+}
+
+@keyframes moveInTop-2 {
+    0% {
+        opacity: 0;
+        transform: translateY(4rem);
+    }
+
+    100% {
+     opacity: 1;
+     transform: translate(0);   
+    }
+}
+
+img {
+    display: block;
+}
+
+.icon {
+    content: url(../img/arrow-down.png);
+    position: relative;
+    margin-top: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    animation: moveInIcon 2s infinite;
+}
+
+@keyframes moveInIcon {
+    0% {
+        opacity: 0;
+        transform: translateY(-4rem);
+    }
+
+    100% {
+     opacity: 1;
+     transform: translate(0);   
+    }
+}
+
+@media (max-width: 37.5em) {
+    img {display: block;}
+    .icon {
+        margin-top: 5rem;
+        margin-left: auto;
+        margin-right: auto; } }
